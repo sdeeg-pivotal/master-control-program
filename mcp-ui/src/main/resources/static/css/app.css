@@ -1,0 +1,101 @@
+
+body {
+	font-family: sans-serif;
+}
+
+core-scaffold {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* menu bar of the left panel */
+core-toolbar {
+	background: #000000;
+	color: #fafafa;
+}
+
+/* content of the left panel */
+core-header-panel {
+	background: #616161;
+	color: #fafafa;
+}
+
+/* title bar of the right panel */
+core-scaffold::shadow core-toolbar {
+/* 	background: #ff5722; */
+/* 	background: transparent; */
+	background-image: url(../img/tron-style-banner-2.jpg);
+	color: #fafafa;
+}
+/* content of the right panel */
+core-scaffold::shadow core-header-panel {
+	background: red;
+	color: white;
+}
+
+/* some default styles for mode="cover" on core-scaffold */
+core-scaffold[mode=cover]::shadow core-header-panel::shadow #mainContainer {
+	left: 120px;
+}
+
+core-scaffold[mode=cover] .content {
+	margin: 20px 100px 20px 0;
+}
+
+core-item.core-selected {
+  color: black;
+}
+
+
+    core-field {
+      /* background-color: #f0f0f0; */
+      /* background-color: #1B5E85; */
+      background-color: transparent;
+    }
+
+    paper-input-decorator {
+      color: #ffffff; 
+    }
+    
+    paper-icon-button {    	
+    	/* background-color: #f0f0f0; */    	
+    	/* background-color: #1B5E85; */
+      background-color: transparent;
+      color: #ffffff;
+    }
+
+
+
+.content {
+	background-color: #aabbcc;
+	height: 5000px;
+	padding: 20px;
+}
+
+div.tool_xx {
+	background-color: #aabbcc;
+}
+
+div.bubble {
+	margin: 20px;
+	padding: 80px 20px;
+	border-radius: 20px;
+	background-color: #f1f1f1;
+}
+
+p.bot {
+	margin: 20px;
+	padding: 80px 20px;
+	border-radius: 20px;
+	background-color: #eee;
+}
+
+botnet-control {
+	margin: 20px;
+	padding: 80px 20px;
+	border-radius: 20px;
+	background-color: #eee;
+}

@@ -1,0 +1,65 @@
+
+<polymer-element name="display-element" attributes="csrfHeader">
+<template>
+<core-ajax id="tokenEndpoint" 
+           url="/uaa/token" 
+           headers="{{csrfHeader}}"
+           handleAs="json" 
+           response="{{authToken}}" 
+           on-core-response="{{tokenResponse}}" 
+           on-core-error="{{tokenError}}"></core-ajax>
+<core-ajax id="resourceEndpoint" 
+           url="/resource"
+	       handleAs="json" 
+	       response="{{greeting}}"
+	       on-core-error="{{resourceError}}"></core-ajax>
+<div>
+	<h1>Greeting</h1>
+	<p>The ID is {{greeting.id}}</p>
+	<p>The content is {{greeting.content}}</p>
+	<p><paper-button on-click='{{refresh}}'>Refresh</paper-button></p>
+</div>
+</template>
+<script>
+    Polymer({
+        //Use created function to initialize complex properties
+        created: function() {
+        	this.csrfHeader = "";
+            this.authToken = { token: "DummyToken"};
+            this.greeting = {
+            	id: "123",
+            	content: "default"
+            };
+        },
+        ready: function() {
+            this.$.tokenEndpoint.go();
+        },
+        refresh: function() {
+        	if(this.authToken.token === "DummyToken") {
+                this.$.tokenEndpoint.go();
+        	}
+        	else {
+                this.$.resourceEndpoint.go();
+        	}
+        },
+        reset: function() {
+            this.$.resourceEndpoint.headers = "";
+            this.authToken = { token: "DummyToken"};
+            this.greeting = {
+            	id: "123",
+            	content: "default"
+            };
+        },
+    	tokenResponse: function() {
+            this.$.resourceEndpoint.headers = JSON.stringify({"X-Auth-Token" : this.authToken.token});
+            this.$.resourceEndpoint.go();
+    	},
+    	resourceError: function() {
+    		//noop
+    	},
+    	tokenError: function() {
+    		this.authToken = { token:"tokenEndpointError" };
+    	}
+    });
+</script>
+</polymer-element>

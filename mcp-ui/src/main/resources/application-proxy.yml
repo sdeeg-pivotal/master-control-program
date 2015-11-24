@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    local:
+      path: /botnet/local-forum-driver/**
+      url: http://localhost:8081/botnode
+    cal:
+      path: /botnet/cal-forum-driver/**
+      url: http://cal-forum-driver.cfapps.io/botnode
+    stanford:
+      path: /botnet/stanford-forum-driver/**
+      url: http://stanford-forum-driver.cfapps.io/botnode
+    fresno:
+      path: /botnet/fresno-forum-driver/**
+      url: http://fresno-forum-driver.cfapps.io/botnode
+      

@@ -1,0 +1,11 @@
+#debug: true
+
+#Turn logging to WARN for org.*
+logging:
+  level:
+    org: WARN
+
+#proxy, security-open
+spring:
+  profiles:
+    active: security,proxy

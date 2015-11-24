@@ -1,0 +1,10 @@
+---
+applications:
+- name: stanford-forum-driver
+  memory: 512M
+  host: stanford-forum-driver
+  domain: cfapps.io
+  path: target/bot-node-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: webviewer,xenforo,stanford
+    ZUUL_ROUTES_RESOURCE_URL: http://polymer-demo-resource.cfapps.io/api/resource

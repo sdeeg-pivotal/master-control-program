@@ -1,0 +1,12 @@
+
+mcp:
+  botnode:
+    name: default-botnode
+    numbots: 1
+    threads: 1
+    id: ${random.int[1000,10000]}
+  bot:
+    actions: 1
+    sleep:
+      min: 1000
+      max: 1000

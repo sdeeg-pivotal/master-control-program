@@ -1,0 +1,43 @@
+<link rel="import" href="../js/bower_components/core-ajax/core-ajax.html">
+<link rel="import" href="../js/bower_components/core-icons/core-icons.html">
+<link rel="import" href="../js/bower_components/paper-elements/paper-elements.html">
+
+<polymer-element name="botnet-control-element" attributes="botNetStatus mcpApiUri">
+  <template>
+   <!-- Polymer Ajax abstractions for BotNet Services -->
+   <core-ajax id="statusEndpoint" url="{{mcpApiUri}}/status" handleAs="json" response="{{botNetStatus}}"></core-ajax>
+   <core-ajax id="initEndpoint" url="{{mcpApiUri}}/initialize" handleAs="json" response="{{botNetStatus}}"></core-ajax>
+   <core-ajax id="startEndpoint" url="{{mcpApiUri}}/start" handleAs="json" response="{{botNetStatus}}"></core-ajax>
+
+    <div>
+   <paper-button raised on-click='{{getStatus}}'>Get Status</paper-button>
+   <paper-button raised on-click='{{initializeBotNet}}'>Initialize</paper-button>
+   <paper-button raised on-click='{{startBotNet}}'>Start BotNet</paper-button>
+   
+  </template>
+  <script>
+    Polymer({
+      botNetStatus: {
+    	  botNetName: "Foo",
+    	  numBots: 0,
+    	  botStats: [ ],
+    	  botStatsCurrent: [ ],
+    	  pageViewSummary: { },
+    	  totalRequests: 0,
+    	  totalTimeRequests: 0,
+    	  totalTimeActive: 0,
+    	  pvSec: 0
+    	  },
+      mcpApiUri: "/botnode",
+      getStatus: function() {
+    	this.$.statusEndpoint.go(); //Get data from webService
+      },
+      initializeBotNet: function() {
+    	  this.$.initEndpoint.go();
+      },
+      startBotNet: function() {
+    	  this.$.startEndpoint.go();
+      }
+    });
+  </script>
+</polymer-element>
