@@ -1,13 +1,12 @@
-# cloud-driver
-Application to drive activities.  It includes:
+# Master Control Program
+Application to drive a distributed set of worker objects.  It includes:
 
 * mcp-ui:  The Master Control Program.  This is the UI server and proxy to the backend services.
-* mcp-botnode:  These are the workers.  The come up and wait for control messages.
-* reporter:  Services that deliver high level reporting data. (FUTURE)
+* mcp-botnode-lib: Base library for creating Bots 
+* mcp-botnodes: These are the Bots.  The come up and wait for control messages.  They are the backend services.
 
-Initially built to send GET/POST traffic to a web based application, it's being generalized
-to act as a simulator for source data.  It also is an implementation of "micro-services"
-architecture with a SPA (single page application) front end.
+Initially built to send GET/POST traffic to a web based application as part of a test harness, it's being generalized
+so that it's easy to write a Bot as a "micro-services", but also have it present a custom UI through an interface.
 
 ##Architecture
 
@@ -16,9 +15,13 @@ JavaScript/Polymer client
 UI Server
 Service Proxy (co-located with UI)
 
-mcp-botnode
-RESTful service implementing status/start/stop for the cluster
+mcp-botnode-lib
+Base library that implements a standard set of services that allow the bot to work as a multi-threaded node
+as well as a participatant in the larger distributed command system.  This library has the annotations for:
 
-mcp-reporter
-Reporter
+* MCPBotNode
+* MCPBot
+* MCPBotRun
 
+mcp-bots
+As set of Bot implementations.  Currently all broken except for the sample.
