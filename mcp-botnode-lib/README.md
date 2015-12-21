@@ -9,7 +9,13 @@ Create a bot node application by using the annotation:
 
 @BotNode
 
-##Running
+##Distributed Control System Node
 
-The basic bot node lib provides the ability to run in a test mode.  Either java -jar or
-deploy to CF.
+Implements a general control api
+
+/initialize /init
+/start
+/stop
+/reset
+/status
+

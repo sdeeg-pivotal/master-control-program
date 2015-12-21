@@ -2,9 +2,7 @@ package com.pivotal.fe.mcp.botnode.lib.util;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
-@Service
+//@Service
 public class NameUtil
 {
 	private List<String> names;

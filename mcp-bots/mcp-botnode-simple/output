@@ -1,0 +1,958 @@
+Connected, tailing logs for app mcp-botnode-simple in org west-fe-sdeeg / space development as sdeeg@pivotal.io...
+
+2015-12-09T16:40:31.19-0800 [API/0]      OUT Updated app with guid 34fb2cb5-f472-4e4c-b366-025d2f911448 ({"state"=>"STARTED"})
+2015-12-09T16:40:31.43-0800 [STG/0]      OUT Creating container
+2015-12-09T16:40:31.91-0800 [STG/0]      OUT Successfully created container
+2015-12-09T16:40:31.91-0800 [STG/0]      OUT Downloading app package...
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT Downloaded app package (32.7M)
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT No buildpack specified; fetching standard buildpacks to detect and build your application.
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT Downloading buildpacks (staticfile_buildpack, java_buildpack_offline, ruby_buildpack, nodejs_buildpack, go_buildpack, python_buildpack, php_buildpack, binary_buildpack, nodejs-rj), build artifacts cache...
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT Downloading staticfile_buildpack...
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT Downloading java_buildpack_offline...
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT Downloading ruby_buildpack...
+2015-12-09T16:40:33.43-0800 [STG/0]      OUT Downloading nodejs_buildpack...
+2015-12-09T16:40:33.51-0800 [STG/0]      OUT Downloaded staticfile_buildpack
+2015-12-09T16:40:33.51-0800 [STG/0]      OUT Downloading go_buildpack...
+2015-12-09T16:40:33.71-0800 [STG/0]      OUT Downloading python_buildpack...
+2015-12-09T16:40:34.07-0800 [STG/0]      OUT Downloaded nodejs_buildpack
+2015-12-09T16:40:34.07-0800 [STG/0]      OUT Downloading php_buildpack...
+2015-12-09T16:40:36.44-0800 [STG/0]      OUT Downloaded python_buildpack
+2015-12-09T16:40:36.44-0800 [STG/0]      OUT Downloading binary_buildpack...
+2015-12-09T16:40:36.48-0800 [STG/0]      OUT Downloaded binary_buildpack
+2015-12-09T16:40:36.48-0800 [STG/0]      OUT Downloading nodejs-rj...
+2015-12-09T16:40:36.56-0800 [STG/0]      OUT Downloaded ruby_buildpack
+2015-12-09T16:40:36.56-0800 [STG/0]      OUT Downloading build artifacts cache...
+2015-12-09T16:40:36.61-0800 [STG/0]      OUT Downloaded build artifacts cache (109B)
+2015-12-09T16:40:37.19-0800 [STG/0]      OUT Downloaded java_buildpack_offline
+2015-12-09T16:40:37.55-0800 [STG/0]      OUT Downloaded nodejs-rj
+2015-12-09T16:40:38.36-0800 [STG/0]      OUT Downloaded go_buildpack
+2015-12-09T16:40:39.20-0800 [STG/0]      OUT Downloaded php_buildpack
+2015-12-09T16:40:39.20-0800 [STG/0]      OUT Downloaded buildpacks
+2015-12-09T16:40:39.20-0800 [STG/0]      OUT Staging...
+2015-12-09T16:40:41.65-0800 [STG/0]      OUT -----> Java Buildpack Version: v3.3 (offline) | https://github.com/cloudfoundry/java-buildpack.git#378f420
+2015-12-09T16:40:41.81-0800 [STG/0]      OUT -----> Downloading Open Jdk JRE 1.8.0_60 from https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_60.tar.gz (found in cache)
+2015-12-09T16:40:43.09-0800 [STG/0]      OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.2s)
+2015-12-09T16:40:43.09-0800 [STG/0]      OUT -----> Downloading Open JDK Like Memory Calculator 2.0.0_RELEASE from https://download.run.pivotal.io/memory-calculator/trusty/x86_64/memory-calculator-2.0.0_RELEASE.tar.gz (found in cache)
+2015-12-09T16:40:43.13-0800 [STG/0]      OUT        Memory Settings: -Xmx382293K -XX:MaxMetaspaceSize=64M -Xss995K -Xms382293K -XX:MetaspaceSize=64M
+2015-12-09T16:40:43.13-0800 [STG/0]      OUT -----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://download.run.pivotal.io/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+2015-12-09T16:40:52.65-0800 [STG/0]      OUT Exit status 0
+2015-12-09T16:40:52.65-0800 [STG/0]      OUT Staging complete
+2015-12-09T16:40:52.65-0800 [STG/0]      OUT Uploading droplet, build artifacts cache...
+2015-12-09T16:40:52.65-0800 [STG/0]      OUT Uploading droplet...
+2015-12-09T16:40:52.66-0800 [STG/0]      OUT Uploading build artifacts cache...
+2015-12-09T16:40:52.72-0800 [STG/0]      OUT Uploaded build artifacts cache (109B)
+2015-12-09T16:41:19.58-0800 [STG/0]      OUT Uploaded droplet (77.4M)
+2015-12-09T16:41:19.59-0800 [STG/0]      OUT Uploading complete
+2015-12-09T16:41:20.32-0800 [CELL/0]     OUT Creating container
+2015-12-09T16:41:20.79-0800 [CELL/0]     OUT Successfully created container
+2015-12-09T16:41:26.12-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:26.12-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:26.66-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:26.66-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:27.20-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:27.20-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:27.75-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:27.75-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:28.23-0800 [APP/0]      OUT 2015-12-10 00:41:28.230  INFO 23 --- [           main] pertySourceApplicationContextInitializer : Adding 'cloud' PropertySource to ApplicationContext
+2015-12-09T16:41:28.30-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:28.31-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:28.32-0800 [APP/0]      OUT 2015-12-10 00:41:28.329  WARN 23 --- [           main] o.c.r.o.s.cloud.AbstractCloudConnector   : No suitable service info creator found for service mcp-config Did you forget to add a ServiceInfoCreator?
+2015-12-09T16:41:28.32-0800 [APP/0]      OUT 2015-12-10 00:41:28.329  WARN 23 --- [           main] o.c.r.o.s.cloud.AbstractCloudConnector   : No suitable service info creator found for service mcp-sr Did you forget to add a ServiceInfoCreator?
+2015-12-09T16:41:28.34-0800 [APP/0]      OUT 2015-12-10 00:41:28.349  INFO 23 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+2015-12-09T16:41:28.36-0800 [APP/0]      OUT 2015-12-10 00:41:28.366  INFO 23 --- [           main] c.p.f.m.b.s.McpBotnodeSimpleApplication  : Starting McpBotnodeSimpleApplication on 75t0nj0ulao with PID 23 (/home/vcap/app started by vcap in /home/vcap/app)
+2015-12-09T16:41:28.36-0800 [APP/0]      OUT 2015-12-10 00:41:28.367  INFO 23 --- [           main] c.p.f.m.b.s.McpBotnodeSimpleApplication  : The following profiles are active: cloud
+2015-12-09T16:41:28.45-0800 [APP/0]      OUT 2015-12-10 00:41:28.450  INFO 23 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@139e88a9: startup date [Thu Dec 10 00:41:28 UTC 2015]; root of context hierarchy
+2015-12-09T16:41:28.71-0800 [APP/0]      OUT 2015-12-10 00:41:28.714  INFO 23 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+2015-12-09T16:41:28.73-0800 [APP/0]      OUT 2015-12-10 00:41:28.734  INFO 23 --- [           main] urceCloudServiceBeanFactoryPostProcessor : No beans of type javax.sql.DataSource found. Skipping auto-reconfiguration.
+2015-12-09T16:41:28.75-0800 [APP/0]      OUT 2015-12-10 00:41:28.749  INFO 23 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-12-09T16:41:28.85-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:28.85-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:28.87-0800 [APP/0]      OUT 2015-12-10 00:41:28.877  INFO 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cd254ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-12-09T16:41:29.18-0800 [APP/0]      OUT 2015-12-10 00:41:29.188  INFO 23 --- [           main] c.p.f.m.b.s.McpBotnodeSimpleApplication  : Started McpBotnodeSimpleApplication in 1.846 seconds (JVM running for 3.213)
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT   .   ____          _            __ _ _
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT  =========|_|==============|___/=/_/_/_/
+2015-12-09T16:41:29.27-0800 [APP/0]      OUT  :: Spring Boot ::        (v1.3.0.RELEASE)
+2015-12-09T16:41:29.37-0800 [APP/0]      OUT 2015-12-10 00:41:29.377  INFO 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2015-12-09T16:41:29.40-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:29.40-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:29.51-0800 [APP/0]      OUT 2015-12-10 00:41:29.519  WARN 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/bot-node/cloud":Connection refused; nested exception is java.net.ConnectException: Connection refused
+2015-12-09T16:41:29.53-0800 [APP/0]      OUT 2015-12-10 00:41:29.533  INFO 23 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+2015-12-09T16:41:29.53-0800 [APP/0]      OUT 2015-12-10 00:41:29.535  INFO 23 --- [           main] c.p.f.m.b.s.McpBotnodeSimpleApplication  : The following profiles are active: cloud
+2015-12-09T16:41:29.55-0800 [APP/0]      OUT 2015-12-10 00:41:29.554  INFO 23 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a00b66a: startup date [Thu Dec 10 00:41:29 UTC 2015]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@139e88a9
+2015-12-09T16:41:29.93-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:29.93-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:30.27-0800 [APP/0]      OUT 2015-12-10 00:41:30.270  WARN 23 --- [           main] .i.s.PathMatchingResourcePatternResolver : Skipping [/home/vcap/app/.java-buildpack/spring_auto_reconfiguration/spring_auto_reconfiguration-1.10.0_RELEASE.jar] because it does not denote a directory
+2015-12-09T16:41:30.46-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:30.47-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:30.99-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:31.00-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:31.53-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:31.53-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:31.82-0800 [APP/0]      OUT 2015-12-10 00:41:31.823  INFO 23 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-12-09T16:41:32.10-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:32.12-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:32.65-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:32.66-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:32.66-0800 [APP/0]      OUT 2015-12-10 00:41:32.664  INFO 23 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+2015-12-09T16:41:32.66-0800 [APP/0]      OUT 2015-12-10 00:41:32.668  INFO 23 --- [           main] urceCloudServiceBeanFactoryPostProcessor : No beans of type javax.sql.DataSource found. Skipping auto-reconfiguration.
+2015-12-09T16:41:32.70-0800 [APP/0]      OUT 2015-12-10 00:41:32.699  INFO 23 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b76c75ea-c1a4-3df3-ab8e-c72051b01f13
+2015-12-09T16:41:32.71-0800 [APP/0]      OUT 2015-12-10 00:41:32.715  INFO 23 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-12-09T16:41:32.80-0800 [APP/0]      OUT 2015-12-10 00:41:32.803  INFO 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cd254ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-12-09T16:41:33.31-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:33.32-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:33.73-0800 [APP/0]      OUT 2015-12-10 00:41:33.731  INFO 23 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-12-09T16:41:33.79-0800 [APP/0]      OUT 2015-12-10 00:41:33.796  INFO 23 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-12-09T16:41:33.80-0800 [APP/0]      OUT 2015-12-10 00:41:33.801  INFO 23 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.28
+2015-12-09T16:41:33.86-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:33.86-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:34.03-0800 [APP/0]      OUT 2015-12-10 00:41:34.036  INFO 23 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-12-09T16:41:34.03-0800 [APP/0]      OUT 2015-12-10 00:41:34.036  INFO 23 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4482 ms
+2015-12-09T16:41:34.40-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:34.40-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:34.60-0800 [APP/0]      OUT 2015-12-10 00:41:34.604  INFO 23 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.611  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.612  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.612  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.613  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.613  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.613  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2015-12-09T16:41:34.61-0800 [APP/0]      OUT 2015-12-10 00:41:34.614  INFO 23 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2015-12-09T16:41:34.71-0800 [APP/0]      OUT 2015-12-10 00:41:34.710  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.MCPBotNodeConfig  : In generateBots.  Creating 2 bots
+2015-12-09T16:41:34.79-0800 [APP/0]      OUT 2015-12-10 00:41:34.799  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.MCPBotNodeConfig  : Found bean name: mcpBotnodeSimpleBot
+2015-12-09T16:41:34.81-0800 [APP/0]      OUT 2015-12-10 00:41:34.812  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.impl.BotRunner    : In BotRunner Create
+2015-12-09T16:41:34.81-0800 [APP/0]      OUT 2015-12-10 00:41:34.815  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.MCPBotNodeConfig  : Creating BotRunner bean with name: default and bot: com.pivotal.fe.mcp.botnode.simple.McpBotnodeSimpleBot@297bd6b0
+2015-12-09T16:41:34.81-0800 [APP/0]      OUT 2015-12-10 00:41:34.816  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.impl.BotRunner    : In BotRunner Create
+2015-12-09T16:41:34.81-0800 [APP/0]      OUT 2015-12-10 00:41:34.817  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.MCPBotNodeConfig  : Creating BotRunner bean with name: default and bot: com.pivotal.fe.mcp.botnode.simple.McpBotnodeSimpleBot@5ba2632f
+2015-12-09T16:41:34.81-0800 [APP/0]      OUT 2015-12-10 00:41:34.817  INFO 23 --- [           main] c.p.fe.mcp.botnode.lib.MCPBotNodeConfig  : Returning listOfBots: [com.pivotal.fe.mcp.botnode.lib.impl.BotRunner@aedc084, com.pivotal.fe.mcp.botnode.lib.impl.BotRunner@7dd4493f]
+2015-12-09T16:41:34.93-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:34.94-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:35.32-0800 [APP/0]      OUT 2015-12-10 00:41:35.321  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a00b66a: startup date [Thu Dec 10 00:41:29 UTC 2015]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@139e88a9
+2015-12-09T16:41:35.46-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:35.47-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:35.49-0800 [APP/0]      OUT 2015-12-10 00:41:35.494  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ || /status],methods=[GET]}" onto public com.pivotal.fe.mcp.botnode.lib.dom.NodeManagerStatus com.pivotal.fe.mcp.botnode.lib.api.BotNodeApiController.getStatus()
+2015-12-09T16:41:35.49-0800 [APP/0]      OUT 2015-12-10 00:41:35.496  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/start],methods=[GET]}" onto public com.pivotal.fe.mcp.botnode.lib.dom.NodeManagerStatus com.pivotal.fe.mcp.botnode.lib.api.BotNodeApiController.startBots()
+2015-12-09T16:41:35.49-0800 [APP/0]      OUT 2015-12-10 00:41:35.497  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stop],methods=[GET]}" onto public com.pivotal.fe.mcp.botnode.lib.dom.NodeManagerStatus com.pivotal.fe.mcp.botnode.lib.api.BotNodeApiController.stopBots()
+2015-12-09T16:41:35.49-0800 [APP/0]      OUT 2015-12-10 00:41:35.497  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/initialize],methods=[GET]}" onto public com.pivotal.fe.mcp.botnode.lib.dom.NodeManagerStatus com.pivotal.fe.mcp.botnode.lib.api.BotNodeApiController.initialize()
+2015-12-09T16:41:35.50-0800 [APP/0]      OUT 2015-12-10 00:41:35.501  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-12-09T16:41:35.50-0800 [APP/0]      OUT 2015-12-10 00:41:35.502  INFO 23 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-12-09T16:41:35.57-0800 [APP/0]      OUT 2015-12-10 00:41:35.577  INFO 23 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09T16:41:35.57-0800 [APP/0]      OUT 2015-12-10 00:41:35.577  INFO 23 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09T16:41:35.65-0800 [APP/0]      OUT 2015-12-10 00:41:35.654  INFO 23 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09T16:41:36.00-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:36.00-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:36.47-0800 [APP/0]      OUT 2015-12-10 00:41:36.479  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.479  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.480  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.481  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.483  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.483  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.484  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.485  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.485  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.486  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.487  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.487  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.488  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.488  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2015-12-09T16:41:36.48-0800 [APP/0]      OUT 2015-12-10 00:41:36.489  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.49-0800 [APP/0]      OUT 2015-12-10 00:41:36.489  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.49-0800 [APP/0]      OUT 2015-12-10 00:41:36.490  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.49-0800 [APP/0]      OUT 2015-12-10 00:41:36.491  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2015-12-09T16:41:36.49-0800 [APP/0]      OUT 2015-12-10 00:41:36.491  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.49-0800 [APP/0]      OUT 2015-12-10 00:41:36.492  INFO 23 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09T16:41:36.53-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:36.54-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:36.66-0800 [APP/0]      OUT 2015-12-10 00:41:36.661  INFO 23 --- [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a00b66a: startup date [Thu Dec 10 00:41:29 UTC 2015]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@139e88a9] and template loader path [classpath:/templates/]
+2015-12-09T16:41:36.66-0800 [APP/0]      OUT 2015-12-10 00:41:36.663  INFO 23 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2015-12-09T16:41:36.81-0800 [APP/0]      OUT 2015-12-10 00:41:36.813  WARN 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2015-12-09T16:41:36.81-0800 [APP/0]      OUT 2015-12-10 00:41:36.814  INFO 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2015-12-09T16:41:36.82-0800 [APP/0]      OUT 2015-12-10 00:41:36.823  WARN 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2015-12-09T16:41:36.82-0800 [APP/0]      OUT 2015-12-10 00:41:36.823  INFO 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2015-12-09T16:41:36.93-0800 [APP/0]      OUT 2015-12-10 00:41:36.929  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-12-09T16:41:36.94-0800 [APP/0]      OUT 2015-12-10 00:41:36.940  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2015-12-09T16:41:36.94-0800 [APP/0]      OUT 2015-12-10 00:41:36.941  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2015-12-09T16:41:36.94-0800 [APP/0]      OUT 2015-12-10 00:41:36.942  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2015-12-09T16:41:36.94-0800 [APP/0]      OUT 2015-12-10 00:41:36.945  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2015-12-09T16:41:36.94-0800 [APP/0]      OUT 2015-12-10 00:41:36.946  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2015-12-09T16:41:36.95-0800 [APP/0]      OUT 2015-12-10 00:41:36.951  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2015-12-09T16:41:36.96-0800 [APP/0]      OUT 2015-12-10 00:41:36.965  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2015-12-09T16:41:36.99-0800 [APP/0]      OUT 2015-12-10 00:41:36.991  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2015-12-09T16:41:37.01-0800 [APP/0]      OUT 2015-12-10 00:41:37.016  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5a00b66a,type=ConfigurationPropertiesRebinder]
+2015-12-09T16:41:37.06-0800 [APP/0]      OUT 2015-12-10 00:41:37.060  INFO 23 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2015-12-09T16:41:37.06-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:37.06-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:37.25-0800 [APP/0]      OUT 2015-12-10 00:41:37.252  INFO 23 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2015-12-09T16:41:37.26-0800 [APP/0]      OUT 2015-12-10 00:41:37.267  INFO 23 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2015-12-09T16:41:37.60-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:37.60-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:37.64-0800 [APP/0]      OUT 2015-12-10 00:41:37.642  INFO 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using encoding codec LegacyJacksonJson
+2015-12-09T16:41:37.64-0800 [APP/0]      OUT 2015-12-10 00:41:37.644  INFO 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using decoding codec LegacyJacksonJson
+2015-12-09T16:41:37.96-0800 [APP/0]      OUT 2015-12-10 00:41:37.969  INFO 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using encoding codec LegacyJacksonJson
+2015-12-09T16:41:37.96-0800 [APP/0]      OUT 2015-12-10 00:41:37.969  INFO 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using decoding codec LegacyJacksonJson
+2015-12-09T16:41:38.06-0800 [APP/0]      OUT 2015-12-10 00:41:38.067  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2015-12-09T16:41:38.06-0800 [APP/0]      OUT 2015-12-10 00:41:38.067  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2015-12-09T16:41:38.06-0800 [APP/0]      OUT 2015-12-10 00:41:38.068  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2015-12-09T16:41:38.06-0800 [APP/0]      OUT 2015-12-10 00:41:38.068  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2015-12-09T16:41:38.07-0800 [APP/0]      OUT 2015-12-10 00:41:38.069  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2015-12-09T16:41:38.07-0800 [APP/0]      OUT 2015-12-10 00:41:38.070  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2015-12-09T16:41:38.07-0800 [APP/0]      OUT 2015-12-10 00:41:38.070  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2015-12-09T16:41:38.13-0800 [HEALTH/0]   OUT healthcheck failed
+2015-12-09T16:41:38.14-0800 [HEALTH/0]   OUT Exit status 1
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 2015-12-10 00:41:38.215  WARN 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Can't get a response from http://localhost:8761/eureka/apps/
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getUrl(DiscoveryClient.java:1782) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1526) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1029) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:480) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:329) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:51) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:149) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609.CGLIB$eurekaClient$1(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609$$FastClassBySpringCGLIB$$14592908.invoke(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:318) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609.eurekaClient(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:326) [spring-cloud-context-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:159) [spring-cloud-context-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) [spring-aop-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:187) [spring-aop-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.proxy.$Proxy87.getApplications(Unknown Source) [na:na]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration.maybeInitializeClient(EurekaDiscoveryClientConfiguration.java:120) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration.start(EurekaDiscoveryClientConfiguration.java:97) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:851) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:140) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:347) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:295) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1112) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1101) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.pivotal.fe.mcp.botnode.simple.McpBotnodeSimpleApplication.main(McpBotnodeSimpleApplication.java:13) [app/:na]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53) [app/:na]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	... 63 common frames omitted
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 2015-12-10 00:41:38.219 ERROR 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Can't contact any eureka nodes - possibly a security group issue?
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getUrl(DiscoveryClient.java:1782) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1526) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1029) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:480) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:329) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:51) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:149) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609.CGLIB$eurekaClient$1(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609$$FastClassBySpringCGLIB$$14592908.invoke(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:318) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609.eurekaClient(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.21-0800 [APP/0]      OUT 	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:326) [spring-cloud-context-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:159) [spring-cloud-context-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) [spring-aop-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:187) [spring-aop-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.proxy.$Proxy87.getApplications(Unknown Source) [na:na]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration.maybeInitializeClient(EurekaDiscoveryClientConfiguration.java:120) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration.start(EurekaDiscoveryClientConfiguration.java:97) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:851) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:140) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:347) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:295) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1112) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1101) [spring-boot-1.3.0.RELEASE.jar!/:1.3.0.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.pivotal.fe.mcp.botnode.simple.McpBotnodeSimpleApplication.main(McpBotnodeSimpleApplication.java:13) [app/:na]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53) [app/:na]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	... 63 common frames omitted
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 2015-12-10 00:41:38.221 ERROR 23 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527 - was unable to refresh its cache! status = java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getUrl(DiscoveryClient.java:1782) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1526) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1029) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:480) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:329) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:51) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:149) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609.CGLIB$eurekaClient$1(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609$$FastClassBySpringCGLIB$$14592908.invoke(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:318) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$cdfe9609.eurekaClient(<generated>) [spring-cloud-netflix-core-1.1.0.M3.jar!/:1.1.0.M3]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.2.3.RELEASE.jar!/:4.2.3.RELEASE]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 2015-12-10 00:41:38.222  WARN 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 2015-12-10 00:41:38.224  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2015-12-09T16:41:38.22-0800 [APP/0]      OUT 2015-12-10 00:41:38.227  INFO 23 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2015-12-09T16:41:38.25-0800 [APP/0]      OUT 2015-12-10 00:41:38.257  INFO 23 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application bot-node with eureka with status UP
+2015-12-09T16:41:38.25-0800 [APP/0]      OUT 2015-12-10 00:41:38.258  INFO 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [current=UP, previous=STARTING]
+2015-12-09T16:41:38.26-0800 [APP/0]      OUT 2015-12-10 00:41:38.262  INFO 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527: registering service...
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 2015-12-10 00:41:38.348  WARN 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Can't get a response from http://localhost:8761/eureka/apps/BOT-NODE
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:87) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.34-0800 [APP/0]      OUT 	... 20 common frames omitted
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 2015-12-10 00:41:38.349 ERROR 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Can't contact any eureka nodes - possibly a security group issue?
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:87) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	... 20 common frames omitted
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 2015-12-10 00:41:38.350  WARN 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527 - registration failed java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:87) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	... 20 common frames omitted
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 2015-12-10 00:41:38.351  WARN 23 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:87) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:41:38.50-0800 [APP/0]      OUT 2015-12-10 00:41:38.505  INFO 23 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-12-09T16:41:38.50-0800 [APP/0]      OUT 2015-12-10 00:41:38.507  INFO 23 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 8080
+2015-12-09T16:41:38.51-0800 [APP/0]      OUT 2015-12-10 00:41:38.510  INFO 23 --- [           main] c.p.f.m.b.s.McpBotnodeSimpleApplication  : Started McpBotnodeSimpleApplication in 11.918 seconds (JVM running for 12.536)
+2015-12-09T16:41:38.66-0800 [HEALTH/0]   OUT healthcheck passed
+2015-12-09T16:41:38.66-0800 [HEALTH/0]   OUT Exit status 0
+2015-12-09T16:41:58.85-0800 [RTR/0]      OUT mcp-botnode-simple.west-1.fe.gopivotal.com - [10/12/2015:00:41:58 +0000] "GET /start HTTP/1.1" 200 0 938 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36" 10.68.44.10:60822 x_forwarded_for:"107.3.163.135" x_forwarded_proto:"https" vcap_request_id:a9dca0fe-efc2-4105-48db-c34acc38722b response_time:0.206803388 app_id:34fb2cb5-f472-4e4c-b366-025d2f911448
+2015-12-09T16:41:58.98-0800 [APP/0]      OUT 2015-12-10 00:41:58.989  INFO 23 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-12-09T16:41:58.98-0800 [APP/0]      OUT 2015-12-10 00:41:58.989  INFO 23 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-12-09T16:41:59.01-0800 [APP/0]      OUT 2015-12-10 00:41:59.010  INFO 23 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2015-12-09T16:41:59.06-0800 [RTR/0]      OUT mcp-botnode-simple.west-1.fe.gopivotal.com - [10/12/2015:00:41:59 +0000] "GET /favicon.ico HTTP/1.1" 200 0 946 "https://mcp-botnode-simple.west-1.fe.gopivotal.com/start" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36" 10.68.44.10:60840 x_forwarded_for:"107.3.163.135" x_forwarded_proto:"https" vcap_request_id:ae7ee4a8-1646-460f-4303-11ec1fbda928 response_time:0.043413729 app_id:34fb2cb5-f472-4e4c-b366-025d2f911448
+2015-12-09T16:41:59.06-0800 [APP/0]      OUT 2015-12-10 00:41:59.067  INFO 23 --- [nio-8080-exec-2] c.p.fe.mcp.botnode.lib.impl.NodeManager  : In startBots()
+2015-12-09T16:41:59.09-0800 [APP/0]      OUT 2015-12-10 00:41:59.092  INFO 23 --- [pool-3-thread-1] c.p.fe.mcp.botnode.lib.impl.BotRunner    : Bot default is starting up
+2015-12-09T16:41:59.09-0800 [APP/0]      OUT 2015-12-10 00:41:59.092  INFO 23 --- [pool-3-thread-1] c.p.f.m.b.simple.McpBotnodeSimpleBot     : I'm a simple Bot, and I'm running
+2015-12-09T16:41:59.09-0800 [APP/0]      OUT 2015-12-10 00:41:59.092  INFO 23 --- [pool-3-thread-1] c.p.f.m.b.simple.McpBotnodeSimpleBot     : Here's a random number: 24
+2015-12-09T16:41:59.09-0800 [APP/0]      OUT 2015-12-10 00:41:59.093  INFO 23 --- [pool-3-thread-1] c.p.fe.mcp.botnode.lib.impl.BotRunner    : Bot default finished
+2015-12-09T16:41:59.09-0800 [APP/0]      OUT 2015-12-10 00:41:59.096  INFO 23 --- [pool-3-thread-2] c.p.fe.mcp.botnode.lib.impl.BotRunner    : Bot default is starting up
+2015-12-09T16:41:59.10-0800 [APP/0]      OUT 2015-12-10 00:41:59.100  INFO 23 --- [pool-3-thread-2] c.p.f.m.b.simple.McpBotnodeSimpleBot     : I'm a simple Bot, and I'm running
+2015-12-09T16:41:59.10-0800 [APP/0]      OUT 2015-12-10 00:41:59.100  INFO 23 --- [pool-3-thread-2] c.p.f.m.b.simple.McpBotnodeSimpleBot     : Here's a random number: 38
+2015-12-09T16:41:59.10-0800 [APP/0]      OUT 2015-12-10 00:41:59.100  INFO 23 --- [pool-3-thread-2] c.p.fe.mcp.botnode.lib.impl.BotRunner    : Bot default finished
+2015-12-09T16:41:59.11-0800 [APP/0]      OUT 2015-12-10 00:41:59.117  INFO 23 --- [       Thread-4] c.p.fe.mcp.botnode.lib.impl.NodeManager  : Done in Start
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.225  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.227  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.227  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.228  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.228  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.229  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2015-12-09T16:42:08.22-0800 [APP/0]      OUT 2015-12-10 00:42:08.229  INFO 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 2015-12-10 00:42:08.235  WARN 23 --- [pool-5-thread-1] com.netflix.discovery.DiscoveryClient    : Can't get a response from http://localhost:8761/eureka/apps/BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.put(WebResource.java:213) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1516) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:901) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1814) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	... 16 common frames omitted
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 2015-12-10 00:42:08.238 ERROR 23 --- [pool-5-thread-1] com.netflix.discovery.DiscoveryClient    : Can't contact any eureka nodes - possibly a security group issue?
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.put(WebResource.java:213) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1516) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:901) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1814) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	... 16 common frames omitted
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 2015-12-10 00:42:08.239 ERROR 23 --- [pool-5-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527 - was unable to send heartbeat!
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.put(WebResource.java:213) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1516) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:901) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1814) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.23-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	... 16 common frames omitted
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 2015-12-10 00:42:08.245  WARN 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Can't get a response from http://localhost:8761/eureka/apps/
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getUrl(DiscoveryClient.java:1782) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1526) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1029) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.access$2100(DiscoveryClient.java:123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1880) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.24-0800 [APP/0]      OUT 	... 20 common frames omitted
+2015-12-09T16:42:08.25-0800 [APP/0]      OUT 2015-12-10 00:42:08.251 ERROR 23 --- [pool-6-thread-1] com.netflix.discovery.DiscoveryClient    : Can't contact any eureka nodes - possibly a security group issue?
+2015-12-09T16:42:08.25-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.25-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.25-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.25-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getUrl(DiscoveryClient.java:1782) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1526) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1029) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.access$2100(DiscoveryClient.java:123) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1880) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.26-0800 [APP/0]      OUT 	... 20 common frames omitted
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 2015-12-10 00:42:08.353  INFO 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527: registering service...
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 2015-12-10 00:42:08.355  WARN 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Can't get a response from http://localhost:8761/eureka/apps/BOT-NODE
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	... 19 common frames omitted
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 2015-12-10 00:42:08.358 ERROR 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Can't contact any eureka nodes - possibly a security group issue?
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.35-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	... 19 common frames omitted
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 2015-12-10 00:42:08.360  WARN 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOT-NODE/23c183fb-f2cd-43bd-6e59-d0877070a527 - registration failed java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) [eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	... 19 common frames omitted
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 2015-12-10 00:42:08.363  WARN 23 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1542) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCallWithFollowRedirect(DiscoveryClient.java:1444) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1427) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1381) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:866) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:103) ~[eureka-client-1.3.4.jar!/:1.3.4]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_60-]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.1.jar!/:4.5.1]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar!/:1.19]
+2015-12-09T16:42:08.36-0800 [APP/0]      OUT 	... 19 common frames omitted
+2015-12-09T16:42:08.69-0800 [HEALTH/0]   OUT healthcheck passed
+2015-12-09T16:42:08.70-0800 [HEALTH/0]   OUT Exit status 0

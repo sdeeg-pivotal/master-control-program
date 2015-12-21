@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 public class NodeManagerStatus
 {
-	public String botNetName;
+	public String botNodeName;
 	public int numBots;
 	public List<BotResult> botStats = new LinkedList<>();
 	public List<BotResult> botStatsCurrent = new LinkedList<>();
@@ -16,5 +16,5 @@ public class NodeManagerStatus
 	public long totalRequests;
 	public long totalTimeRequests;
 	public long totalTimeActive;
-	public int pvSec;
+	public int reqSec;
 }

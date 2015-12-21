@@ -1,4 +1,4 @@
-package com.pivotal.fe.mcp.ui.webui;
+package com.pivotal.fe.mcp.ui.api;
 
 import java.security.Principal;
 import java.util.Collections;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/uaa")
-public class UAAController {
+public class UAA_Controller {
 
 	@RequestMapping("/user")
 	public Principal user(Principal user) {

@@ -3,15 +3,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.pivotal.fe.mcp</groupId>
-	<artifactId>parent</artifactId>
+	<artifactId>mcp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Application to drive/report http load</name>
+	<name>Master Control Program</name>
+	<description>Applications and framework for deploying a distributed control system</description>
+	
 
 	<modules>
 		<module>mcp-ui</module>
 		<module>mcp-botnode-lib</module>
-		<module>mcp-bots</module>
 	</modules>
 	
 </project>

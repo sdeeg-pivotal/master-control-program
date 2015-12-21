@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pivotal.fe.mcp.botnode.lib.dom.NodeManager;
 import com.pivotal.fe.mcp.botnode.lib.dom.NodeManagerStatus;
+import com.pivotal.fe.mcp.botnode.lib.impl.NodeManager;
 
 @RestController
 public class BotNodeApiController
@@ -15,43 +15,49 @@ public class BotNodeApiController
     @Value("${botnet.name:my-botnet}")
 	public String name;
 
-    private final NodeManager shepherd;
+    private final NodeManager nodeManager;
 	
 	@Autowired
-	public BotNodeApiController(NodeManager shepherd)
+	public BotNodeApiController(NodeManager nodeManager)
 	{
-		this.shepherd = shepherd;
+		this.nodeManager = nodeManager;
 	}
 	
     @RequestMapping(value = {"/","/status"}, method = RequestMethod.GET)
-	public NodeManagerStatus getStatus()
+	public NodeManagerStatus status()
 	{
-    	NodeManagerStatus status = shepherd.getStatus();
-    	status.botNetName = name;
+    	NodeManagerStatus status = nodeManager.getStatus();
+    	status.botNodeName = name;
     	return status;
 	}
     
-    @RequestMapping(value = "/initialize", method = RequestMethod.GET)
+    @RequestMapping(value = {"/initialize", "/init"}, method = RequestMethod.GET)
 	public NodeManagerStatus initialize()
 	{
-    	NodeManagerStatus status = shepherd.initialize();
-    	status.botNetName = name;
+    	NodeManagerStatus status = nodeManager.initialize();
+    	status.botNodeName = name;
     	return status;
 	}
     
     @RequestMapping(value = "/start", method = RequestMethod.GET)
-	public NodeManagerStatus startBots()
+	public NodeManagerStatus start()
 	{
-    	NodeManagerStatus status = shepherd.startBots();
-    	status.botNetName = name;
+    	NodeManagerStatus status = nodeManager.startBots();
+    	status.botNodeName = name;
     	return status;
 	}
 
     @RequestMapping(value = "/stop", method = RequestMethod.GET)
-    public NodeManagerStatus stopBots()
+    public NodeManagerStatus stop()
 	{
-    	NodeManagerStatus status = shepherd.stopBots();
-    	status.botNetName = name;
+    	NodeManagerStatus status = nodeManager.stopBots();
+    	status.botNodeName = name;
     	return status;
+	}
+
+    @RequestMapping(value = "/reset", method = RequestMethod.GET)
+    public NodeManagerStatus reset()
+	{
+    	return nodeManager.getStatus();
 	}
 }

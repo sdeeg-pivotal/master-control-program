@@ -1,4 +1,4 @@
-package com.pivotal.fe.mcp.botnode.lib.dom;
+package com.pivotal.fe.mcp.botnode.lib.impl;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -6,6 +6,10 @@ import java.util.concurrent.Callable;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+import com.pivotal.fe.mcp.botnode.lib.dom.BotResult;
 
 /**
  * 
@@ -20,6 +24,8 @@ import org.springframework.beans.factory.annotation.Value;
  * The method can return void, null, or some data.  If returning data it should be
  * JSON friendly.  Like a Map<String,Object>.
  */
+@Component
+@Scope("prototype")
 public class BotRunner implements Callable<BotResult>
 {
     private static final Logger log = Logger.getLogger(BotRunner.class);
@@ -33,33 +39,49 @@ public class BotRunner implements Callable<BotResult>
 	@Value("${bot.sleep.max:1000}") 
 	protected int sleepMax;
 	
-	public String login;
+	public String name;
 	
 	protected BotResult status;
 	private Object bot;
 	
-	public BotRunner(String login, Object bot)
+	public BotRunner()
 	{
-		this.login = login;
-		this.bot = bot;
-		
+		name = "constructor_name";
 		status = new BotResult();
-		status.botName = login;
+		status.botName = name;
+		
+		log.info("In BotRunner Create");
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setBot(Object bot) {
+		this.bot = bot;
 	}
 	
 	public void setNumActions(int numActions) { this.numActions = numActions; }
 
 	@Override
 	public BotResult call() throws Exception {
-		log.info("Bot "+login+" is starting up");
+		log.info("Bot "+name+" is starting up");
+		if(bot == null) {
+			log.error("The Bot is null");
+		}
 		status.startTime = System.currentTimeMillis();
 		status.state = "running";
 		
-		doSession();
+		if(bot != null) {
+			doSession();
+		}
+		else {
+			log.error("The bot is null, can not do anything in this BotRunner");
+		}
 		
 		status.stopTime = System.currentTimeMillis();
 		status.state = "stopped";
-		log.info("Bot "+login+" finished");
+		log.info("Bot "+name+" finished");
 		
 		return status;
 	}
@@ -67,18 +89,9 @@ public class BotRunner implements Callable<BotResult>
 	public void doSession()
 	{
 		try {
-			Method botRun = bot.getClass().getMethod("run",null);
-			botRun.invoke(bot, null);
-		} catch (NoSuchMethodException | SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
+			Method botRun = bot.getClass().getMethod("run");
+			botRun.invoke(bot);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

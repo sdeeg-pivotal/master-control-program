@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Target({ElementType.TYPE, ElementType.PARAMETER, ElementType.FIELD})
@@ -19,6 +20,7 @@ public @interface MCPBot {
 
 	@Target(ElementType.METHOD)
 	@Retention(RetentionPolicy.RUNTIME)
+	//@Scheduled(fixedDelay = 1000)
 	@interface MCPBotRun {
 		
 	}

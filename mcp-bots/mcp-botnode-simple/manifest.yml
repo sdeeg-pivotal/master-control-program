@@ -1,0 +1,9 @@
+---
+applications:
+- name: sbot
+  memory: 512M
+  host: mcp-botnode-simple
+  path: target/mcp-botnode-simple-0.0.1-SNAPSHOT.jar
+  services:
+   - mcp-config
+   - mcp-sr
