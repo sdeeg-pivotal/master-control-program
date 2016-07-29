@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
  * 
  * @author Scott Deeg
  *
- * Trivial class that would generally contain more significant configuration
- * for the bot to use.
+ * Create a random number generator for the bot to use.
+ * 
  */
 @Configuration
 public class McpBotnodeSimpleConfig {

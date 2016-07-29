@@ -1,14 +1,17 @@
 package com.pivotal.fe.mcp.botnode.lib.impl;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
+import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.stereotype.Component;
 
+import com.pivotal.fe.mcp.botnode.lib.MCPBot.MCPBotStart;
 import com.pivotal.fe.mcp.botnode.lib.dom.BotResult;
 
 /**
@@ -85,14 +88,30 @@ public class BotRunner implements Callable<BotResult>
 		
 		return status;
 	}
-	
+
+	//Look for a method annotated with @MCPBotStart.  If none, look for a start() method.
+	//TODO: move logic to check for an appropriate sooner in the bot lifecycle.
 	public void doSession()
 	{
+		Method botStart = null;
 		try {
-			Method botRun = bot.getClass().getMethod("run");
-			botRun.invoke(bot);
+			List<Method> methods = Arrays.asList(bot.getClass().getMethods());
+			for(Method m : methods) {
+				if(AnnotationUtils.findAnnotation(m, MCPBotStart.class)!=null) {
+					log.info("Found method "+m.getName()+" annotated with @MCPBotStart");
+					botStart = m;
+				}
+			}
+			if(botStart == null) {
+				botStart = bot.getClass().getMethod("start");
+			}
+			if(botStart != null) {
+				botStart.invoke(bot);
+			}
+			else {
+				log.error("Tried to start a Bot, but couldn't find a method annotated with @MCPBotStart nor a start() method"); 
+			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

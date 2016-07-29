@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.pivotal.fe.mcp.botnode.lib.MCPBot;
-import com.pivotal.fe.mcp.botnode.lib.MCPBot.MCPBotRun;
+import com.pivotal.fe.mcp.botnode.lib.MCPBot.MCPBotStart;;
 
 /**
  * @author Scott Deeg
@@ -21,8 +21,8 @@ public class McpBotnodeSimpleBot {
 	@Autowired(required = false)
 	Random randy;
 
-	@MCPBotRun
-    public void run() {
+	@MCPBotStart
+    public void start() {
 
     	log.info("I'm a simple Bot, and I'm running");
     	if(randy != null) {

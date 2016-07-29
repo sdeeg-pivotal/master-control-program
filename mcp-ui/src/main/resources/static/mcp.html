@@ -1,24 +1,22 @@
 <html>
 <head>
-    <script src="/js/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link rel="import" href="/js/bower_components/polymer/polymer.html">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
-    <link rel="import" href="/js/bower_components/paper-header-panel/paper-header-panel.html">
-    <link rel="import" href="/js/bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="imports.html">
 
-    <link rel="import" href="/modules/botnet-module.html">
-    <link rel="import" href="/modules/botnet-control-panel.html">
+    <link rel="import" href="/elements/botnet-module.html">
+    <link rel="import" href="/elements/botnet-control-panel.html">
     
-<!--     <link rel="stylesheet" href="css/app.css" type="text/css" /> -->
+<!--     <link rel="stylesheet" href="styles/app.css" type="text/css" /> -->
 
 </head>
-<body class="fullbleed layout vertical">
+<body unresolved class="fullbleed layout vertical">
 <my-app></my-app>
 <dom-module id="my-app">
 <style>
 	paper-toolbar {
 	/*     background: #000000; */
-		background-image: url(../img/tron-style-banner-2.jpg);
+		background-image: url(../images/tron-style-banner-2.jpg);
 	    color: #fafafa;
 	    height: 100px;
 	}

@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,7 +18,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import com.pivotal.fe.mcp.botnode.lib.impl.BotRunner;
-import com.pivotal.fe.mcp.botnode.lib.impl.NodeManager;
+import com.pivotal.fe.mcp.botnode.lib.impl.NodeManagerImpl;
 import com.pivotal.fe.mcp.botnode.lib.util.NameUtil;
 
 /**
@@ -30,7 +29,6 @@ import com.pivotal.fe.mcp.botnode.lib.util.NameUtil;
  * and BotNodeManager.
  */
 @Configuration
-@EnableDiscoveryClient
 @ComponentScan("com.pivotal.fe.mcp.botnode.lib")
 @PropertySource("application-mcp-botnode-lib.properties")
 @EnableScheduling
@@ -48,8 +46,8 @@ public class MCPBotNodeConfig {
 	private int numbots;
     
 	@Bean
-	public NodeManager nodeManager() {
-		return new NodeManager(generateBots(nameUtil()));
+	public NodeManagerImpl nodeManager() {
+		return new NodeManagerImpl(generateBots(nameUtil()));
 	}
 
 	@Bean(name = "listOfBots")

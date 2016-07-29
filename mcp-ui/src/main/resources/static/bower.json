@@ -1,0 +1,25 @@
+{
+  "name": "mcp-ui",
+  "homepage": "https://github.com/sdeeg-pivotal/master-control-program",
+  "authors": [
+    "Scott  Deeg <sdeeg@pivotal.io>"
+  ],
+  "description": "front end for distributed control system",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "paper-header-panel": "PolymerElements/paper-header-panel#~1.1.2",
+    "paper-toolbar": "PolymerElements/paper-toolbar#~1.1.2",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1",
+    "paper-button": "PolymerElements/paper-button#~1.0.11"
+  }
+}

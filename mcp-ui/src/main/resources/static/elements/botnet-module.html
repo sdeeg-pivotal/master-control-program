@@ -1,0 +1,39 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="botnode-module.html">
+
+<dom-module id="botnet-module">
+
+  <style>
+  </style>
+  
+  <template>
+    <div>
+    <table width="100%">
+      <tr>
+        <td><botnode-module id="simple" route="/simple-botnode" signal="[[signal]]"></botnode-module></td>
+      </tr>
+    </table>
+    </div>
+  </template>
+
+  <script>
+    // element registration
+    Polymer({
+      is: "botnet-module",
+
+      properties: {
+    	  signal: String
+      },
+      callInitialize: function() {
+    	  //this.$.initializeService.generateRequest();
+      },
+      callStart: function() {
+    	  //this.$.startService.generateRequest();
+      },
+      getStatus: function() {
+    	  //this.$.statusService.generateRequest();
+      }
+    });
+  </script>
+
+</dom-module>

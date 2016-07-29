@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pivotal.fe.mcp.botnode.lib.dom.NodeManagerStatus;
-import com.pivotal.fe.mcp.botnode.lib.impl.NodeManager;
 
 @RestController
 public class BotNodeApiController
@@ -27,15 +26,15 @@ public class BotNodeApiController
 	public NodeManagerStatus status()
 	{
     	NodeManagerStatus status = nodeManager.getStatus();
-    	status.botNodeName = name;
+    	status.botNodeName = this.name;
     	return status;
 	}
     
-    @RequestMapping(value = {"/initialize", "/init"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/initialize", "/init", "/reset"}, method = RequestMethod.GET)
 	public NodeManagerStatus initialize()
 	{
     	NodeManagerStatus status = nodeManager.initialize();
-    	status.botNodeName = name;
+    	status.botNodeName = this.name;
     	return status;
 	}
     
@@ -43,7 +42,7 @@ public class BotNodeApiController
 	public NodeManagerStatus start()
 	{
     	NodeManagerStatus status = nodeManager.startBots();
-    	status.botNodeName = name;
+    	status.botNodeName = this.name;
     	return status;
 	}
 
@@ -51,13 +50,7 @@ public class BotNodeApiController
     public NodeManagerStatus stop()
 	{
     	NodeManagerStatus status = nodeManager.stopBots();
-    	status.botNodeName = name;
+    	status.botNodeName = this.name;
     	return status;
-	}
-
-    @RequestMapping(value = "/reset", method = RequestMethod.GET)
-    public NodeManagerStatus reset()
-	{
-    	return nodeManager.getStatus();
 	}
 }

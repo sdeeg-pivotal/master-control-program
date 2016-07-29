@@ -5,9 +5,16 @@ the lib.
 
 ##Usage
 
-Create a bot node application by using the annotation:
+Create a bot node application by using the annotation `@BotNode` on a class:
 
+```
 @BotNode
+public class MyBot {
+...
+}
+```
+
+Set Spring Profiles: cloud (config server and registry), cli (turns off web)
 
 ##Distributed Control System Node
 
@@ -18,4 +25,9 @@ Implements a general control api
 /stop
 /reset
 /status
+
+## CLI
+
+Enable command line interface by using profile `botnode-cli`.
+
 
